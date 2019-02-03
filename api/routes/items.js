@@ -187,12 +187,12 @@ router.delete('/:itemId', (req, res, next) => {
 });
 
     // Set user input validation rules
-    const schema = Joi.object.keys({ 
+    const schema = Joi.object({ 
         title: Joi.string().min(3).required(),
         description: Joi.string().min(5),
         price: Joi.number().precision(2).strict().positive(),
         stock: Joi.number().integer().positive(),
-        location: Joi.object.keys({
+        location: Joi.object({
             country: Joi.string().min(3),
             city: Joi.string().min(3),
             street: Joi.string().min(3),
