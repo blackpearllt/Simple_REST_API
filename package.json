@@ -1,0 +1,17 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "a node.js RESTful API Tutorial Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edita Narkuniene",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "joi": "^14.3.1",
+    "joi-validate-patch": "0.0.3"
+  }
+}
